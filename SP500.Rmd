@@ -1,4 +1,8 @@
-install.packages("tseries")
+### 
+### S&P 500 Volatility chart
+### By Charles McCann
+### 6306 section 405
+
 ```{r}
 library(knitr)
 library(markdown)
@@ -8,6 +12,7 @@ library(tseries)
 ### S&P 500 (^GSPC)
 ###    SNP - SNP Real Time Price. Currency in USD
 [Link to GitHub repository](https://github.com/ctmccann/SNP500)
+
 ###Download the data of SP500 '^gspc'.
 
 ```{r}
@@ -49,7 +54,7 @@ volest3 <- getVol(100,SNPret)
 ```
 
 ### Plot the results, overlaying the volatility curves on the data, just as was done in the S&P example.
-```{r}
+```{r echo=TRUE}
 plot(volest,type="l")
 lines(volest2, col="red", type="l")
 lines(volest3, col="blue", type="l")
