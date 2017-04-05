@@ -13,7 +13,7 @@ library(tseries)
 ###    SNP - SNP Real Time Price. Currency in USD
 [Link to GitHub repository](https://github.com/ctmccann/SNP500)
 
-###Download the data of SP500 '^gspc'.
+### Download the data of SP500 '^gspc'.
 
 ```{r}
 SNPdata <- get.hist.quote(instrument="^GSPC",quote="Close")
